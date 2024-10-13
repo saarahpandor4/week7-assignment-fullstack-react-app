@@ -18,9 +18,6 @@ export default function NavBar() {
         <i className="fa-solid fa-plus"></i>Create Post
       </Link>
 
-      {/* <br />
-      <Link to="/PostsComments">Post Comments</Link> */}
-
       <br />
       <Link to="/comments">
         <i className="fa-solid fa-comment"></i>Comments
