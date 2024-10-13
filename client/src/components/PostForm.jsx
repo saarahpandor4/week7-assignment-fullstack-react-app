@@ -15,7 +15,7 @@ export default function PostForm() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formValues);
-    fetch("http://localhost:8080/addPosts", {
+    fetch("https://week7-assignment-fullstack-react.onrender.com/addPosts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

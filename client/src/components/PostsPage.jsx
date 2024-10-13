@@ -5,7 +5,9 @@ export default function App() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     async function getPosts() {
-      const response = await fetch("http://localhost:8080/posts");
+      const response = await fetch(
+        "https://week7-assignment-fullstack-react.onrender.com/posts"
+      );
       //MAKE SURE TO CHANGE THE ABOVE LOCALHOST LINK TO RENDER LINK WHEN DEPLOYING!
       const postsData = await response.json();
       setPosts(postsData);
